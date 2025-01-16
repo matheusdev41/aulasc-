@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-int numero1, numero2;
-
-void soma(x, y){
-	int resultado;
-	resultado = x + y;
-	return resultado;
+void SOMA(float a, float b){
+	float resultado;
+	resultado = a + b;
+	printf("A soma de %6.3f com %6.3f é %6.3f\n%", a, b , resultado);
 }
 
 int main(){
@@ -33,7 +31,6 @@ int main(){
 	multiplicacao = numero1 * numero2;
 	divisao = numero1 / numero2;
 	
-	printf("A soma deles e: %d", soma);
 	
 	return 0; 
 }
