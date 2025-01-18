@@ -21,19 +21,7 @@
 	float densidade2;
 	float percapta2;
 	float superPoder2;
-
-// Math Functions
-float DIVIDIR(float x, float y){ 
-	float result = x/y;
-	return result;	
-}
-
-float SOMA(float pop, float are, float pib, float ptr, float den, float per){
-	float result = pop + are + pib + ptr + den + per;
-	return result;
-}
-
-
+	
 // Registration functions Cards:
 // Card 1
 float cadastroCarta1() { 
@@ -83,6 +71,97 @@ float cadastroCarta2() {
     scanf("%d", &nPontosTuristicos2);
 }
 
+// Math Functions
+// Função para divisão
+float DIVIDIR(float x, float y){ 
+	float result = x/y;
+	return result;	
+}
+
+// Função para soma
+float SOMA(float pop, float are, float pib, float ptr, float den, float per){
+	float result = pop + are + pib + ptr + den + per;
+	return result;
+}
+
+// Cards Comparison function
+// Propriedade População
+float comparaCartasPopulacao() {
+	if (populacao1 > populacao2) {
+		printf("Populacao: CARD UM VENCEDORA | card1 = %d > card2 = %d\n\n", populacao1, populacao2);
+	} else if (populacao1 == populacao2) {
+		printf("Populacao: EMPATE | card1 = %d = card2 = %d\n\n", populacao1, populacao2);
+	} else {
+		printf("Populacao:  CARD DOIS VENCEDORA | card1 = %d < card2 = %d\n\n", populacao1, populacao2);
+	}
+}
+
+// Propriedade Área
+float comparaCartasArea() {
+	if (area1 > area2) {
+		printf("Area: CARD UM VENCEDORA | card1 = %.2f > card2 = %.2f\n\n", area1, area2);
+	} else if (area1 == area2) {
+		printf("Area: EMPATE | card1 = %f.2 = card2 = %f.2\n\n", area1, area2);
+	} else {
+		printf("Area: CARD DOIS VENCEDORA  | card1 = %.2f < card2 = %.2f\n\n", area1, area2);
+	}
+}
+
+// Propriedade PIB
+float comparaCartasPib() {
+	if (pib1 > pib2) {
+		printf("Pib: CARD UM VENCEDORA | card1 = %.2f > card2 = %.2f\n\n", pib1, pib2);
+	} else if (pib1 == pib2) {
+		printf("Pib: EMPATE | card1 = %.2lf = card2 = %.2lf\n\n", pib1, pib2);
+	} else {
+		printf("Pib: CARD DOIS VENCEDORA  | card1 = %.2lf < card2 = %.2lf\n\n", pib1, pib2);
+	}
+}
+
+// Propriedade número de pontos turisticos
+float comparaCartasPturisticos() {
+	if (nPontosTuristicos1 > nPontosTuristicos2) {
+		printf("Pontos turisticos: CARD UM VENCEDORA | card1 = %d > card2 = %d\n\n", nPontosTuristicos1, nPontosTuristicos2);
+	} else if (nPontosTuristicos1 == nPontosTuristicos2) {
+		printf("Pontos turisticos: EMPATE | card1 = %d = card2 = %d\n\n", nPontosTuristicos1, nPontosTuristicos2);
+	} else {
+		printf("Pontos turisticos:  CARD DOIS VENCEDORA | card1 = %d < card2 = %d\n\n", nPontosTuristicos1, nPontosTuristicos2);
+	}
+}
+
+// Propriedade densidade
+float comparaCartasDensidade() {
+	if (densidade1 < densidade2) {
+		printf("Densidade: CARD UM VENCEDORA | card1 = %.2lf < card2 = %.2lf\n\n", densidade1, densidade2);
+	} else if (densidade1 == densidade2) {
+		printf("Densidade: EMPATE | card1 = %.2lf = card2 = %.2lf\n\n", densidade1, densidade2);
+	} else {
+		printf("Densidade: CARD DOIS VENCEDORA | card1 = %.2lf > card2 = %.2lf\n\n", densidade1, densidade2);
+	}
+}
+
+// Propriedade PIB per capta
+float comparaCartasPercapta() {
+	if (percapta1 > percapta2) {
+		printf("Pib per capta: CARD UM VENCEDORA | card1 = %lf > card2 = %lf\n\n", percapta1, percapta2);
+	} else if (percapta1 == percapta2) {
+		printf("Pib per capta: EMPATE | card1 = %lf = card2 = %lf\n\n", percapta1, percapta2);
+	} else {
+		printf("Pib per capta: CARD DOIS VENCEDORA | card1 = %lf < card2 = %lf\n\n", percapta1, percapta2);
+	}
+}
+
+// Propriedade SUPER PODER
+float comparaCartasSuperPoder() {
+	if (superPoder1 > superPoder2) {
+		printf("Super Poder: CARD UM VENCEDORA | card1 = %.2f > card2 = %.2f\n\n", superPoder1, superPoder2);
+	} else if (superPoder1 == superPoder2) {
+		printf("Super Poder: EMPATE | card1 = %.2f = card2 = %.2f\n\n", superPoder1, superPoder2);
+	} else {
+		printf("Super Poder:  CARD DOIS VENCEDORA | card1 = %.2f > card2 = %.2f\n\n", superPoder1, superPoder2);
+	}
+}
+
 // Display funcions
 // Card 1
 int  exibirCartaUM(){ 
@@ -95,9 +174,9 @@ int  exibirCartaUM(){
 	printf("Numero de pontos turisticos da cidade1: %d\n\n", nPontosTuristicos1);
 	
 	printf("Densidade: %.2f\n\n", densidade1);
-	printf("PIB per Capita: %.2f\n", percapta1);
+	printf("PIB per Capita: %lf\n", percapta1);
 	
-	printf("Super poder: %.2f\n\n", superPoder1);
+	printf("Super poder: %lf\n\n", superPoder1);
 
 }
 
@@ -112,9 +191,9 @@ int exibirCartaDOIS(){ // Function para exibir Carta2:
 	printf("Numero de pontos turisticos da cidade2: %d\n\n", nPontosTuristicos2);
 	
 	printf("Densidade: %.2f\n\n", densidade2);
-	printf("PIB per Capita: %.2f\n", percapta2);
+	printf("PIB per Capita: %lf\n", percapta2);
 	
-	printf("Super poder: %.2f\n\n", superPoder2);
+	printf("Super poder: %lf\n\n", superPoder2);
 	
 }
 
@@ -139,7 +218,18 @@ int main() {
     // Exibição dos Dados das Cartas:
     
 	int exibirCarta1 = exibirCartaUM();
-	int exibirCarta2 = exibirCartaDOIS(); 
+	int exibirCarta2 = exibirCartaDOIS();
+	
+	// Exibição de resultado das comparações de propriedades: 
+	printf("-------------- RESULTADO --------------  \n\n");
+	
+	float comparaPopulacao = comparaCartasPopulacao();
+	float comparaArea = comparaCartasArea();
+	float comparaPib = comparaCartasPib();
+	float comparaPontosTuristicos = comparaCartasPturisticos();
+	long double comparaDensidade = comparaCartasDensidade();
+	long double comparaPibPercapta = comparaCartasPercapta();
+	float comparaSuperPoder = comparaCartasSuperPoder();
 	
     return 0;
 }
