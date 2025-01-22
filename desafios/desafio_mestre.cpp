@@ -24,7 +24,7 @@
 	
 // Registration functions Cards:
 // Card 1
-float cadastroCarta1() { 
+void cadastroCarta1() { 
 
     printf("-------------- Carta 1 --------------  \n"); // Cabeçalho para melhorar a exibição
     
@@ -48,7 +48,7 @@ float cadastroCarta1() {
 }
 
 // Card 2
-float cadastroCarta2() {
+void cadastroCarta2() {
 	
     printf("-------------- Carta 2 --------------  \n"); // Cabeçalho para melhorar a exibição
     
@@ -86,7 +86,7 @@ float SOMA(float pop, float are, float pib, float ptr, float den, float per){
 
 // Cards Comparison function
 // Propriedade População
-float comparaCartasPopulacao() {
+void comparaCartasPopulacao() {
 	if (populacao1 > populacao2) {
 		printf("Populacao: CARD UM VENCEDORA | card1 = %d > card2 = %d\n\n", populacao1, populacao2);
 	} else if (populacao1 == populacao2) {
@@ -97,7 +97,7 @@ float comparaCartasPopulacao() {
 }
 
 // Propriedade Área
-float comparaCartasArea() {
+void comparaCartasArea() {
 	if (area1 > area2) {
 		printf("Area: CARD UM VENCEDORA | card1 = %.2f > card2 = %.2f\n\n", area1, area2);
 	} else if (area1 == area2) {
@@ -108,18 +108,18 @@ float comparaCartasArea() {
 }
 
 // Propriedade PIB
-float comparaCartasPib() {
+void comparaCartasPib() {
 	if (pib1 > pib2) {
 		printf("Pib: CARD UM VENCEDORA | card1 = %.2f > card2 = %.2f\n\n", pib1, pib2);
 	} else if (pib1 == pib2) {
-		printf("Pib: EMPATE | card1 = %.2lf = card2 = %.2lf\n\n", pib1, pib2);
+		printf("Pib: EMPATE | card1 = %.2f = card2 = %.2f\n\n", pib1, pib2);
 	} else {
-		printf("Pib: CARD DOIS VENCEDORA  | card1 = %.2lf < card2 = %.2lf\n\n", pib1, pib2);
+		printf("Pib: CARD DOIS VENCEDORA  | card1 = %.2f < card2 = %.2f\n\n", pib1, pib2);
 	}
 }
 
 // Propriedade número de pontos turisticos
-float comparaCartasPturisticos() {
+void comparaCartasPturisticos() {
 	if (nPontosTuristicos1 > nPontosTuristicos2) {
 		printf("Pontos turisticos: CARD UM VENCEDORA | card1 = %d > card2 = %d\n\n", nPontosTuristicos1, nPontosTuristicos2);
 	} else if (nPontosTuristicos1 == nPontosTuristicos2) {
@@ -130,18 +130,18 @@ float comparaCartasPturisticos() {
 }
 
 // Propriedade densidade
-float comparaCartasDensidade() {
+void comparaCartasDensidade() {
 	if (densidade1 < densidade2) {
 		printf("Densidade: CARD UM VENCEDORA | card1 = %.2lf < card2 = %.2lf\n\n", densidade1, densidade2);
 	} else if (densidade1 == densidade2) {
-		printf("Densidade: EMPATE | card1 = %.2lf = card2 = %.2lf\n\n", densidade1, densidade2);
+		printf("Densidade: EMPATE | card1 = %.2f = card2 = %.2f\n\n", densidade1, densidade2);
 	} else {
-		printf("Densidade: CARD DOIS VENCEDORA | card1 = %.2lf > card2 = %.2lf\n\n", densidade1, densidade2);
+		printf("Densidade: CARD DOIS VENCEDORA | card1 = %.2f > card2 = %.2f\n\n", densidade1, densidade2);
 	}
 }
 
 // Propriedade PIB per capta
-float comparaCartasPercapta() {
+void comparaCartasPercapta() {
 	if (percapta1 > percapta2) {
 		printf("Pib per capta: CARD UM VENCEDORA | card1 = %lf > card2 = %lf\n\n", percapta1, percapta2);
 	} else if (percapta1 == percapta2) {
@@ -152,7 +152,7 @@ float comparaCartasPercapta() {
 }
 
 // Propriedade SUPER PODER
-float comparaCartasSuperPoder() {
+void comparaCartasSuperPoder() {
 	if (superPoder1 > superPoder2) {
 		printf("Super Poder: CARD UM VENCEDORA | card1 = %.2f > card2 = %.2f\n\n", superPoder1, superPoder2);
 	} else if (superPoder1 == superPoder2) {
@@ -164,7 +164,7 @@ float comparaCartasSuperPoder() {
 
 // Display funcions
 // Card 1
-int  exibirCartaUM(){ 
+void  exibirCartaUM(){ 
 	printf("-------------- Card 1 --------------  \n");
 	printf("\nCodigo da cidade: %d\n", codcidade1 );
 	printf("Nome da cidade: %s\n", nome1 );
@@ -181,7 +181,7 @@ int  exibirCartaUM(){
 }
 
 // Card 2
-int exibirCartaDOIS(){ // Function para exibir Carta2:
+void exibirCartaDOIS(){ // Function para exibir Carta2:
 	printf("-------------- Card 2 --------------  \n");
 	printf("\nCodigo da cidade: %d\n", codcidade2 );
 	printf("Nome da cidade: %s\n", nome2 );
@@ -201,8 +201,8 @@ int main() {
     printf("Desafio Cartas Super Trunfo \n\n"); // Cabeçalho do jogo
     
     printf("Cadastro de cartas: \n\n");
-   	float carta1 = cadastroCarta1();
-   	float carta2 = cadastroCarta2();
+   	cadastroCarta1();
+   	cadastroCarta2();
     
     
     // Propriedades calculáveis das cartas
@@ -217,19 +217,19 @@ int main() {
     
     // Exibição dos Dados das Cartas:
     
-	int exibirCarta1 = exibirCartaUM();
-	int exibirCarta2 = exibirCartaDOIS();
+	exibirCartaUM();
+	exibirCartaDOIS();
 	
 	// Exibição de resultado das comparações de propriedades: 
 	printf("-------------- RESULTADO --------------  \n\n");
 	
-	float comparaPopulacao = comparaCartasPopulacao();
-	float comparaArea = comparaCartasArea();
-	float comparaPib = comparaCartasPib();
-	float comparaPontosTuristicos = comparaCartasPturisticos();
-	long double comparaDensidade = comparaCartasDensidade();
-	long double comparaPibPercapta = comparaCartasPercapta();
-	float comparaSuperPoder = comparaCartasSuperPoder();
+	comparaCartasPopulacao();
+	comparaCartasArea();
+	comparaCartasPib();
+	comparaCartasPturisticos();
+	comparaCartasDensidade();
+ 	comparaCartasPercapta();
+	comparaCartasSuperPoder();
 	
     return 0;
 }
