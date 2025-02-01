@@ -150,64 +150,73 @@ void exibirCartaDOIS(){
 
 int main() {
 	
-	int escolha;
+	int escolha, entrarSair;
 	
 	// Cadastro de cartas
-    printf("Cadastro de cartas: \n\n");
-   	cadastroCarta1();
-   	cadastroCarta2();
-	
-	// Propriedades calculáveis das cartas
-    densidade1 = calculaPropriedade(populacao1, area1);
-    percapta1 = calculaPropriedade(pib1, populacao1);
-    
-    densidade2 = calculaPropriedade(populacao2, area2);
-    percapta2 = calculaPropriedade(pib2, populacao2);
-    
-    superPoder1 = calculaSuperPoder(populacao1, area1, pib1, nPontosTuristicos1, densidade1, percapta1);
-    superPoder2 = calculaSuperPoder(populacao2, area2, pib2, nPontosTuristicos2, densidade2, percapta2);
-    
-	
-	// Cabeçalho do jogo
-    printf("Desafio Cartas Super Trunfo \n\n"); 
-
-    
-    // Exibição dos Dados das Cartas:
-	exibirCartaUM();
-	exibirCartaDOIS();
-	
-	// Escolha de propriedades a serem comparadas
-	printf("Escolha a propriedade a ser comparada:\n"
-	"[1] - Populacao\n"
-	"[2] - Area\n"
-	"[3] - Pib\n"
-	"[4] - Pontos Turisticos\n"
-	"[5] - Densidade\n"
-	"[6] - Pib per capta\n"
-	"[7] - Super Poder\n");
-	
-	scanf("%d", &escolha);
-	
-	// Validação de escolha do usuário
-    if (escolha >=1 && escolha <= 7 ){
-	
-		// Exibição de resultado das comparações de propriedades 
-		printf("-------------- RESULTADO --------------  \n\n");
+   do {
+   	
+		printf("Cadastro de cartas: \n\n");
+	   	cadastroCarta1();
+	   	cadastroCarta2();
 		
-		// Escolha da comparação de propriedades
-		switch (escolha) {
-			case 1: comparaCartas(populacao1, populacao2, "Populacao"); break;
-			case 2: comparaCartas(area1, area2, "Area"); break;
-			case 3: comparaCartas(pib1, pib2, "PIB"); break;
-			case 4: comparaCartas(nPontosTuristicos1, nPontosTuristicos2, "Pontos Turisticos"); break;
-			case 5: comparaCartasDensidade(densidade1, densidade2, "Densidade"); break;
-			case 6: comparaCartas(percapta1, percapta2, "PIB per capta"); break;
-			case 7: comparaCartas(superPoder1, superPoder2, "Super Poder"); break;
+		// Propriedades calculáveis das cartas
+	    densidade1 = calculaPropriedade(populacao1, area1);
+	    percapta1 = calculaPropriedade(pib1, populacao1);
+	    
+	    densidade2 = calculaPropriedade(populacao2, area2);
+	    percapta2 = calculaPropriedade(pib2, populacao2);
+	    
+	    superPoder1 = calculaSuperPoder(populacao1, area1, pib1, nPontosTuristicos1, densidade1, percapta1);
+	    superPoder2 = calculaSuperPoder(populacao2, area2, pib2, nPontosTuristicos2, densidade2, percapta2);
+	    
+		
+		// Cabeçalho do jogo
+	    printf("Desafio Cartas Super Trunfo \n\n"); 
+	
+	    
+	    // Exibição dos Dados das Cartas:
+		exibirCartaUM();
+		exibirCartaDOIS();
+		
+		// Escolha de propriedades a serem comparadas
+		printf("Escolha a propriedade a ser comparada:\n"
+		"[1] - Populacao\n"
+		"[2] - Area\n"
+		"[3] - Pib\n"
+		"[4] - Pontos Turisticos\n"
+		"[5] - Densidade\n"
+		"[6] - Pib per capta\n"
+		"[7] - Super Poder\n");
+		
+		scanf("%d", &escolha);
+		
+		// Validação de escolha do usuário
+	    if (escolha >=1 && escolha <= 7 ){
+		
+			// Exibição de resultado das comparações de propriedades 
+			printf("-------------- RESULTADO --------------  \n\n");
+			
+			// Escolha da comparação de propriedades
+			switch (escolha) {
+				case 1: comparaCartas(populacao1, populacao2, "Populacao"); break;
+				case 2: comparaCartas(area1, area2, "Area"); break;
+				case 3: comparaCartas(pib1, pib2, "PIB"); break;
+				case 4: comparaCartas(nPontosTuristicos1, nPontosTuristicos2, "Pontos Turisticos"); break;
+				case 5: comparaCartasDensidade(densidade1, densidade2, "Densidade"); break;
+				case 6: comparaCartas(percapta1, percapta2, "PIB per capta"); break;
+				case 7: comparaCartas(superPoder1, superPoder2, "Super Poder"); break;
+			}
+			
+		} else {
+			printf("ERRO! Opcao invalida");
+			return 1;
 		}
 		
-	} else {
-		printf("ERRO! Opcao invalida");
-		return 1;
-	}
+		printf(" -- MENU INICIAL -- \n");
+		printf("[1] - RECOMEÇAR JOGO\n");
+		printf("[2] - SAIR DO JOGO\n");
+		scanf("%d", &entrarSair);	
+		
+	} while (entrarSair == 1);
     return 0;
 }
