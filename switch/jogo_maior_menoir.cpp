@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-// Função para exibir o menu inicial
+// Funï¿½ï¿½o para exibir o menu inicial
 void menuInicial(int *escolhaInicio){
 	printf("-- MENU DO JOGO --\n");
 	printf("1 - Iniciar jogo\n");
@@ -13,30 +13,30 @@ void menuInicial(int *escolhaInicio){
 	scanf("%d", escolhaInicio);
 }
 
-// Função para exibir as regras 	
+// Funï¿½ï¿½o para exibir as regras 	
 void exibirRegras(){
 	printf("\n-- REGRAS DO JOGO --\n");
-    printf("1. Você deve cadastrar um número.\n");
-    printf("2. O computador irá gerar um número aleatório.\n");
-    printf("3. Faça sua aposta se seu número é maior, menor ou igual ao do computador.\n");
-    printf("4. Se acertar, você vence. Caso contrário, perde.\n");
+    printf("1. VocÃª deve cadastrar um nï¿½mero.\n");
+    printf("2. O computador irï¿½ gerar um nï¿½mero aleatï¿½rio.\n");
+    printf("3. Faï¿½a sua aposta se seu nï¿½mero ï¿½ maior, menor ou igual ao do computador.\n");
+    printf("4. Se acertar, vocï¿½ vence. Caso contrï¿½rio, perde.\n");
 } 	
 
-// Função para o jogador cadastrar um número
+// FunÃ§ao para o jogador cadastrar um nï¿½mero
 int cadastroNumero() {
 	int numero;
 	printf("-- BEM VINDO --\n");
-	printf("Para comecar o jogo...\n");
+	printf("Para comeÃ§ar o jogo...\n");
 	printf("Cadastre seu numero: ");
 	scanf("%d", &numero);
 	return numero;
 }
 
-// Função para verificar o resultado da aposta
+// Funï¿½ï¿½o para verificar o resultado da aposta
 void resultadoFinal(int nJogador, int nComputador){
 	int aposta, resultado;
 		
-	printf("Agora faça sua aposta!\n");
+	printf("Agora faï¿½a sua aposta!\n");
 	printf("Seu numero e...\n");
 		
 	printf("1 - Maior que o do computador?\n");
@@ -76,7 +76,7 @@ void resultadoFinal(int nJogador, int nComputador){
 
 int main(){
 	int numeroJogador, escolhaInicial, numeroComputador;
-	srand(time(NULL)); // Inicializa o gerador de números aleatórios
+	srand(time(NULL)); // Inicializa o gerador de nï¿½meros aleatï¿½rios
 	
 			
 	do {
