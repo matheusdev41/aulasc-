@@ -1,0 +1,126 @@
+[33mcommit 2c953f57b1102dd3aa0b7dd32a7dd80a19b6b2d3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Fri Feb 7 18:08:19 2025 -0300
+
+    loops avançados e recursividade
+
+[33mcommit b4f506c640a7e2ba12333875377209736691af9d[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Thu Feb 6 05:38:50 2025 -0300
+
+    exemplo_estrutura_repetição_aninhada
+
+[33mcommit 0000c1f1029a26a453206175cd910fedcd7e4369[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Wed Feb 5 22:25:59 2025 -0300
+
+    Conclusão do nível novato
+
+[33mcommit 6281350240c6e6ed283f3fa3f100719ca40d34a1[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Mon Feb 3 21:31:30 2025 -0300
+
+    exemplos de estrutura de repetição
+
+[33mcommit c1e3632f88104dd801c36821ab127c1960d2b7ac[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Mon Feb 3 05:42:56 2025 -0300
+
+    estruturas de repetição ok
+
+[33mcommit 1ba46bbaeaaad4b8377a37d319b11967890ea198[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Mon Feb 3 05:40:25 2025 -0300
+
+    estruturas de repetição 2
+
+[33mcommit 0e82d16b3943c3f892928ec997746eff3d7fe789[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Mon Feb 3 05:38:27 2025 -0300
+
+    estruturas de repetição
+
+[33mcommit b8a57c1718e69daf59c215191ff3645fd36c28c5[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Fri Jan 31 21:06:21 2025 -0300
+
+    estruturas de decisão, operador ternario e exemplos
+
+[33mcommit b4cb7afd983fe408c0d46f91bd105fd0b7a83c5a[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Fri Jan 24 21:17:09 2025 -0300
+
+    adição de estruturas de decisão e menu interativo
+
+[33mcommit f4d3405ad74d7ed554a06c7d0665272279af795a[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Tue Jan 21 22:27:24 2025 -0300
+
+    adição de estruturas de decisoes e operadores logicos
+
+[33mcommit 8d949bf4ba672037765a3b02340d5cc93d071900[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Sat Jan 18 17:50:16 2025 -0300
+
+    adição da tarefa mestre
+
+[33mcommit 73fd1e132f5ffe7d5dbbe697159c84900148a502[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Sat Jan 18 10:30:36 2025 -0300
+
+    inicio do desafio mestre, pendente a comparação de cards
+
+[33mcommit 54f608a0572930aeb1b51a84987b4d48c59dd79f[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Fri Jan 17 06:03:43 2025 -0300
+
+    aprofundamento de modificadores
+
+[33mcommit 7ad3839e05611c1bf6675da544b5dd4c210c2301[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Thu Jan 16 21:25:16 2025 -0300
+
+    adição no nível aventureiro
+
+[33mcommit 3c1141de5935a2ac69ebffb4e84e3f10ed0e94cc[m
+Merge: 401c1a1 aebb75b
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Thu Jan 16 05:51:33 2025 -0300
+
+    Merge branch 'main' of https://github.com/matheusdev41/aulasc-
+
+[33mcommit 401c1a15fb6ea8353125e3df3124dfbef9de2038[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Thu Jan 16 05:50:24 2025 -0300
+
+    adição de tipo de dados e conversões
+
+[33mcommit aebb75b4c1d7c503e9083eccbb6bb542dcd384c5[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Wed Jan 15 21:23:03 2025 -0300
+
+    Update README.md
+
+[33mcommit c4693023ad77f44540bf18a22cdc5cc4c23770d2[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Wed Jan 15 21:22:40 2025 -0300
+
+    Update README.md
+
+[33mcommit 389f72122e1e9b52807595d4e108dffc59464ee6[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Wed Jan 15 21:22:17 2025 -0300
+
+    Create README.md
+
+[33mcommit 9b082ddebc049460b3a0dd9498ef64ba8da2cc20[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Wed Jan 15 21:19:37 2025 -0300
+
+    adição de funções e operadores aritméticos
+
+[33mcommit e062726dbf7073642ceab763dd5e87367745062c[m
+Author: Matheus Pessoa <matheus41.dev@gmail.com>
+Date:   Tue Jan 14 21:34:52 2025 -0300
+
+    Nível Iniciante concluido
