@@ -1,13 +1,23 @@
 #include <stdio.h>
 
+#define LINHA 10
+#define COLUNA 10
+
 int main() {
-    int matriz[3][3] = {
-        {1, 2, 3},
-        {4, 5, 6},
-        {7, 8, 9}
-    };
-    int target = 10;
+    int matriz[LINHA][COLUNA];
+    int target = 4;
     int found = 0;
+    int soma  = 1;
+
+    for (int i = 0; i < LINHA; i++){
+        for (int j = 0; j < COLUNA; j++){
+            matriz[i][j] = soma;
+            soma++;
+            printf("%d  ",matriz[i][j]);
+        }
+        printf("\n");
+    }
+
 
     // Busca condicional do elemento alvo
     for (int i = 0; i < 3; i++){
